@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "openlist-work",
+  "name": "openlist-worker",
   "main": "src/index.ts",
   "compatibility_date": "2025-08-16",
   "compatibility_flags": [
@@ -28,11 +28,11 @@
   /*
   , "kv_namespaces": [{ // <-------KV 数据库配置-------->
       "binding": "KV_DATA",// <---------请勿修改--------->
-      "id": "" // <----修改为你创建的Cloudflare KV数据库ID
+      "id": "7a2a13633db24890b069b348df5641f7" // <----修改为你创建的Cloudflare KV数据库ID
   }],"d1_databases": [{  // <-------D1 数据库配置-------->
       "binding": "D1_DATA",// <---------请勿修改--------->
-      "database_name": "", // <----修改为你CF D1数据库名称
-      "database_id": ""    // <----修改为你CF D1数据库UUID
+      "database_name": "openlist-db", // <----修改为你CF D1数据库名称
+      "database_id": "de16e1eb-cf2c-44c7-958b-f454e7ee58d9"    // <----修改为你CF D1数据库UUID
   }], "observability": { // <-------CF 日志配置项-------->
      "enabled": false,       // 开启日志，如果需调试可以开
      "head_sampling_rate": 1 // <--------请勿修改-------->
